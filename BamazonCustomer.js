@@ -23,6 +23,7 @@ connection.query('SELECT * FROM products', function(err, res) {
         console.log("Department:" + res[i].DepartmentName);
 		console.log("Price:" + res[i].Price);
 		console.log("Stock Quantity:" + res[i].StockQuantity);
+		console.log("--------------------------------------------------");
     }
     	console.log("All Products on Sale!");
 });
