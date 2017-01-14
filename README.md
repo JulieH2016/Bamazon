@@ -17,4 +17,8 @@ The console log shows connection and id number
 Added connection.query function and tested
 The console log shows the bamazon database's products table with all columns and details of the 10 products
 
-Added the connection.end command
+Added a for loop so the console log only shows the column names and data for a cleaner look.
+
+Added the connection.end command as a reminder to use it later
+
+The Screenshots.doc file can be opened in MS Word.
