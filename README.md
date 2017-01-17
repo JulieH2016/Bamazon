@@ -21,5 +21,5 @@ Added a for loop and line break so the console log only shows the column names a
 
 Added the connection.end command as a reminder to use it later
 
-The Screenshots.doc file can be opened in MS Word.
-The Screenshots.pdf file can be opened in Adobe Acrobat.
+The screenshot is located at this link:
+![Image of MySQL Database and Bamazon Page](https://github.com/JulieH2016/Bamazon/blob/77ccdac84fc8f0b8f47f05596221095e6a626cb9/Screenshots.pdf)
