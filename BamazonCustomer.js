@@ -1,4 +1,6 @@
 var mysql = require('mysql');
+var inquirer = require('inquirer');
+
 var connection = mysql.createConnection({
 	host: "localhost",
 	port: 3306, // PORT Number
@@ -10,22 +12,18 @@ var connection = mysql.createConnection({
 connection.connect(function(err) {
 	if (err) throw err;
 	//console.log("connected as id " + connection.threadId);
+	makeTable();
 })
 
-connection.query('SELECT * FROM products', function(err, res) {
-    if (err) throw err;
-
-	//console.log(res);
-
-	for (var i = 0; i < res.length; i++) {
-        console.log("Item ID" + " | " + res[i].ItemID);
-        console.log("Product Name:" + res[i].ProductName);
-        console.log("Department:" + res[i].DepartmentName);
-		console.log("Price:" + res[i].Price);
-		console.log("Stock Quantity:" + res[i].StockQuantity);
-		console.log("--------------------------------------------------");
-    }
-    	console.log("All Products on Sale!");
-});
-
-connection.end();
+var makeTable = function(){
+	connection.query('SELECT * FROM products', function(err, res) {
+    	for (var i = 0; i < res.length; i++){
+        	console.log("Item ID" + " | " + res[i].ItemID);
+        	console.log("Product Name:" + res[i].ProductName);
+        	console.log("Department:" + res[i].DepartmentName);
+			console.log("Price:" + res[i].Price);
+			console.log("Stock Quantity:" + res[i].StockQuantity);
+			console.log("--------------------------------------------------");
+   		 }
+    })
+}

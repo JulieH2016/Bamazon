@@ -5,7 +5,7 @@ NPM - mysql and inquirer packages installed
 
 MySQL Bamazon database created with a Products table, 5 Columns and 10 products
 
-Node.js appl creation in the works as follows:
+Node.js application created as follows in the bamazonCustomer.js file:
 
 Required the MySQL database
 
@@ -21,5 +21,6 @@ Added a for loop and line break so the console log only shows the column names a
 
 Added the connection.end command as a reminder to use it later
 
-The screenshot is located at this link:
+The screenshot is located at this Markdown path - link:
 ![Image of MySQL Database and Bamazon Page](https://github.com/JulieH2016/Bamazon/blob/77ccdac84fc8f0b8f47f05596221095e6a626cb9/Screenshots.pdf)
+
