@@ -1,5 +1,5 @@
 # Bamazon
-Amazon-like store front created with MySQL and Node.js
+Amazon-like store front created with MySQL, Inquirer and Node.js
 
 NPM - mysql and inquirer packages installed
 
@@ -19,8 +19,12 @@ The console log shows the bamazon database's products table with all columns and
 
 Added a for loop and line break so the console log only shows the column names and data for a more readable and cleaner look.
 
-Added the connection.end command as a reminder to use it later
+Used connection.end command to test then deleted to perhaps use later.
 
 The screenshot is located at this Markdown path - link:
 ![Image of MySQL Database and Bamazon Page](https://github.com/JulieH2016/Bamazon/blob/77ccdac84fc8f0b8f47f05596221095e6a626cb9/Screenshots.pdf)
+
+Added a makeTable function as opposed to just the console.log commands.
+Tested; the output displayed is the same.
+
 

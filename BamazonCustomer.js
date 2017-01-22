@@ -16,9 +16,9 @@ connection.connect(function(err) {
 })
 
 var makeTable = function(){
-	connection.query('SELECT * FROM products', function(err, res) {
-    	for (var i = 0; i < res.length; i++){
-        	console.log("Item ID" + " | " + res[i].ItemID);
+	connection.query("SELECT * FROM products", function(err, res) {
+    	for (var i = 0; i <res.length; i++) {  
+    	   	console.log("Item ID" + " | " + res[i].ItemID);
         	console.log("Product Name:" + res[i].ProductName);
         	console.log("Department:" + res[i].DepartmentName);
 			console.log("Price:" + res[i].Price);
@@ -27,3 +27,5 @@ var makeTable = function(){
    		 }
     })
 }
+
+//Perhaps use this code later. connection.end();
