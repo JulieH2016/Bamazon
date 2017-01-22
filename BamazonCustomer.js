@@ -25,7 +25,25 @@ var makeTable = function(){
 			console.log("Stock Quantity:" + res[i].StockQuantity);
 			console.log("--------------------------------------------------");
    		 }
+   	promptCustomer(res);
     })
 }
+var promptCustomer = function(res){
+	inquirer.prompt([{
+		type:'input',
+		name: 'choice',
+		message: "What is the ID number of the product you would like to purchase?" }])
+	.then(function(answer){
+var correct = false;
+for (var i = 0; i <res.length; i++) {
+	if(res[i].ItemID==answer.choice){
+		correct=true;
+		var product=answer.choice;
+		var id=i;
+			} 
+		}
+	})
+}	
+
 
 //Perhaps use this code later. connection.end();
