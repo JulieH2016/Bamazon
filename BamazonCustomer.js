@@ -32,13 +32,16 @@ var promptCustomer = function(res){
 	inquirer.prompt([{
 		type:'input',
 		name: 'choice',
-		message: "What is the ID number of the product you would like to purchase?" }])
-	.then(function(answer){
+		message: "Which product would you like to purchase? [Type Product Name or Quit with Q]"
+	}]).then(function(answer){
 var correct = false;
+	if(answer.choice.toUpperCase()=="Q"){
+		process.exit();
+	}
 for (var i = 0; i <res.length; i++) {
-	if(res[i].ItemID==answer.choice){
+	if(res[i].ProductName==answer.choice){
 		correct=true;
-var ItemID=answer.choice;
+var product=answer.choice;
 var id=i;
 	inquirer.prompt({
 		type:"input",
@@ -52,8 +55,8 @@ var id=i;
 			}
 		}
 	}).then(function(answer){
-		if((res[id].StockQuantity=answer.quant)>0){
-			connection.query("UPDATE products SET StockQuantity='"+(res[id].StockQuantity-answer.quant)+"' WHERE ItemID='"+product+"'", function(err,res2){
+		if((res[id].StockQuantity-answer.quant)>0){
+			connection.query("UPDATE products SET StockQuantity='"+(res[id].StockQuantity-answer.quant)+"' WHERE ProductName='"+product+"'", function(err,res2){
 			console.log("Product Purchased!");
 			makeTable();
 			})
@@ -62,10 +65,12 @@ var id=i;
 			promptCustomer(res);
 					}
 				})
-			} 
+			}
+		}
+		if(i==res.length && correct==false){
+			console.log("Not a valid selection!");
+			promptCustomer(res);
 		}
 	})
 }	
-
-
-//Perhaps use this code later. connection.end();
+// The README file outlines the creation steps and application's functions. It also states the url of the application's image.
