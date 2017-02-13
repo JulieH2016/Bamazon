@@ -22,7 +22,7 @@ Added a for loop and line break so the console log only shows the column names a
 Used connection.end command to test then deleted to perhaps use later.
 
 The Screenshots.pdf file is located at this Markdown path - link:
-![Image of Bamazon](https://github.com/JulieH2016/Bamazon/Screenshots.pdf)
+[Image of Bamazon](https://github.com/JulieH2016/Bamazon/Screenshots.pdf)
 
 Added a makeTable function as opposed to just the console.log commands.
 Tested; the output displayed is the same.
