@@ -21,8 +21,8 @@ Added a for loop and line break so the console log only shows the column names a
 
 Used connection.end command to test then deleted to perhaps use later.
 
-The first page of screenshots of the app and how it functions is located at this link:
-![Image of Bamazon Page and Functions](https://github.com/JulieH2016/Bamazon/screenshot1.jpg "Screenshot1of3")
+The three pages of screenshots of the app and how it functions is located at: screenshot1.jpg, screenshot2.jpg and screenshot3.jpg or
+the Acrobat file Screenshot.pdf
 
 Added a makeTable function as opposed to just the console.log commands.
 Tested; the output displayed is the same.
