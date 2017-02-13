@@ -21,8 +21,7 @@ Added a for loop and line break so the console log only shows the column names a
 
 Used connection.end command to test then deleted to perhaps use later.
 
-The three pages of screenshots of the app and how it functions is located at: screenshot1.jpg, screenshot2.jpg and screenshot3.jpg or
-the Acrobat file Screenshot.pdf
+The screenshots of the app and how it functions are located in the Bamazon github project folder. The files are either the three jpeg files: screenshot1.jpg, screenshot2.jpg and screenshot3.jpg or all three pages are contained in the Acrobat file Screenshot.pdf
 
 Added a makeTable function as opposed to just the console.log commands.
 Tested; the output displayed is the same.
